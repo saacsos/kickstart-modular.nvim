@@ -13,6 +13,7 @@ return {
   keys = {
     { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal' },
   },
+
   opts = {
     filesystem = {
       window = {
@@ -22,4 +23,9 @@ return {
       },
     },
   },
+
+  config = function()
+    vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', { desc = 'neotree left' })
+    vim.keymap.set('n', '<leader>bf', ':Neotree buffers reveal float<CR>', { desc = 'neotree buffer reverl float' })
+  end,
 }
