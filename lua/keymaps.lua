@@ -45,4 +45,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Custom
+vim.keymap.set('n', '<leader>s', ':w<CR>', { desc = 'Save current file' })
+vim.keymap.set('n', 'DD', '"_dd', { desc = 'Delete without save to register' })
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+
 -- vim: ts=2 sts=2 sw=2 et
