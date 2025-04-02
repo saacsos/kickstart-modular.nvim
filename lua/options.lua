@@ -65,3 +65,12 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
 -- vim: ts=2 sts=2 sw=2 et
+vim.opt.directory = '/Users/saacsos/tmp/'
+
+vim.o.tabstop = 4
+vim.o.expandtab = true
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+
+vim.o.encoding = 'utf-8'
+vim.o.fileencodings = 'utf-8'
